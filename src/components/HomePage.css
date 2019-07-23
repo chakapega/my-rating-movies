@@ -1,0 +1,27 @@
+.home__page {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.welcome__container {
+  margin-top: 150px;
+  height: 150px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: wheat;
+  border-radius: 7px;
+}
+.welcome__text {
+  font-size: 19px;
+}
+.welcome__link {
+  width: 300px;
+  height: 50px;
+  background-color: tan;
+  text-decoration: none;
+  color: aliceblue;
+}

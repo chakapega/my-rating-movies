@@ -10,10 +10,11 @@
   width: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  background-color: wheat;
-  border-radius: 7px;
+  background-color: white;
+  border-radius: 9px;
+  box-shadow: 0 0 11px;
+  opacity: 0.9;
 }
 .welcome__text {
   font-size: 19px;
@@ -21,7 +22,18 @@
 .welcome__link {
   width: 300px;
   height: 50px;
-  background-color: tan;
+  background-color: #805586;
   text-decoration: none;
   color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  margin-top: 20px;
+  font-size: 19px;
+}
+.welcome__link:hover {
+  width: 303px;
+  height: 51px;
+  transition: 0.1s;
 }

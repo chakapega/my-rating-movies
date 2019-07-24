@@ -11,5 +11,29 @@
   <div id="root">
   
   </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAaIMsa-TQm8RKuSMQFOHMqHbkNkQwYq6Y",
+      authDomain: "my-rating-movies.firebaseapp.com",
+      databaseURL: "https://my-rating-movies.firebaseio.com",
+      projectId: "my-rating-movies",
+      storageBucket: "",
+      messagingSenderId: "392510284514",
+      appId: "1:392510284514:web:50435892731287b9"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+  </script>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 .switch__container {
-  height: 80px;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -8,8 +8,8 @@
 .switch__body {
   width: 90px;
   height: 36px;
-  background-color: #7dd2e094;
-  border-radius: 30px;
+  background-color: #4f694ac7;
+  border-radius: 35px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -18,7 +18,7 @@
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: beige;
+  background-color: #e8e889;
   margin-left: 57px;
   transition: 0.33s;
 }
@@ -26,15 +26,17 @@
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: beige;
+  background-color: #e8e889;
   margin-left: 3px;
   transition: 0.33s;
 }
 .text__movies {
   margin-right: 10px;
-  color: white;
+  color: #444444;
+  font-size: 19px;
 }
 .text__serials {
   margin-left: 10px;
-  color: white;
+  color: #444444;
+  font-size: 19px;
 }

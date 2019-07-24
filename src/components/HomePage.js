@@ -7,7 +7,7 @@ export default function Home() {
     <div className='home__page'>
       <div className='welcome__container'>
         <p className='welcome__text'>Welcome to my rating of movies and serials. To continue, click the button below.</p>
-        <Link className='welcome__link' to='/rating'>Go to ratings</Link>
+        <Link className='welcome__link' to='/ratings'>Go to ratings</Link>
       </div>
     </div>
   );

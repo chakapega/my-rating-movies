@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './RatingsPage.css';
+import Switch from './Switch';
+import MoviesPage from './MoviesPage';
+import SerialsPage from './SerialsPage';
 
 export default class RatingsPage extends Component {
   state = {
     areMoviesSelected: true,
   };
 
-  switch = e => {
+  switchFunc = e => {
     const { areMoviesSelected } = this.state;
 
     if(e.target.className === 'switch__ball_movies') {
@@ -18,18 +21,18 @@ export default class RatingsPage extends Component {
     };
   };
 
-
   render() {
+    const { areMoviesSelected } = this.state;
+
+    const moviesPage = areMoviesSelected && <MoviesPage />
+    const serialsPage = !areMoviesSelected && <SerialsPage />
+
     return (
       <div className='ratings__page'>
-        <div className='switch__container'>
-        <span className='text__movies'>Movies</span>
-          <div className='switch__body'>
-            <div className='switch__ball_movies' onClick={this.switch}></div>
-          </div>
-          <span className='text__serials'>Serials</span>
-        </div>
+        <Switch switchFunc={this.switchFunc} />
+        {moviesPage}
+        {serialsPage}
       </div>
-    )
-  }
-}
+    );
+  };
+};

@@ -8,7 +8,7 @@ export default function Header() {
       <span className='header__logo'>My rating of movies and serials</span>
       <div className='header__navigation'>
         <Link to='/' className='navigation__home'>Home</Link>
-        <Link to='/rating' className='navigation__rating'>Ratings</Link>
+        <Link to='/ratings' className='navigation__rating'>Ratings</Link>
         <Link to='/addmovie' className='navigation__home'>Add movie</Link>
       </div>
     </div>

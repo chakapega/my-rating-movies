@@ -1,0 +1,40 @@
+.switch__container {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch__body {
+  width: 90px;
+  height: 36px;
+  background-color: #7dd2e094;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.switch__ball_serials {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: beige;
+  margin-left: 57px;
+  transition: 1s;
+}
+.switch__ball_movies {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: beige;
+  margin-left: 3px;
+  transition: 1s;
+}
+.text__movies {
+  margin-right: 10px;
+  color: white;
+}
+.text__serials {
+  margin-left: 10px;
+  color: white;
+}

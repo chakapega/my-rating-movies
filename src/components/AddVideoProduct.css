@@ -1,0 +1,48 @@
+.add-video-product__page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.add-video-product__form {
+  width: 700px;
+  height: 480px;
+  background-color: #b8c394;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 7px;
+  box-shadow: 0 0 10px;
+}
+.add-video-product__form_button {
+  height: 40px;
+  width: 150px;
+  border-radius: 7px;
+  outline: none;
+  font-size: 20px;
+}
+#textarea__video-product_description {
+  border-radius: 7px;
+  outline: none;
+}
+#input__video-product__year {
+  border-radius: 7px;
+}
+#input__video-product_name {
+  border-radius: 7px;
+  width: 300px;
+}
+#input__video-product_poster-url {
+  border-radius: 7px;
+  width: 400px;
+}
+.add-video-product__title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#select__video-product_type {
+  width: 120px;
+  border-radius: 7px;
+}

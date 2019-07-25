@@ -7,7 +7,7 @@
 }
 .add-video-product__form {
   width: 700px;
-  height: 480px;
+  height: 500px;
   background-color: #b8c394;
   display: flex;
   flex-direction: column;
@@ -17,8 +17,9 @@
   box-shadow: 0 0 10px;
 }
 .add-video-product__form_button {
-  height: 40px;
-  width: 150px;
+  height: 30px;
+  width: 130px;
+  cursor: pointer;
   border-radius: 7px;
   outline: none;
   font-size: 20px;
@@ -44,5 +45,8 @@
 }
 #select__video-product_type {
   width: 120px;
+  border-radius: 7px;
+}
+#input__video-product_rating {
   border-radius: 7px;
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './RatingsPage.css';
 import Switch from './Switch';
 import MoviesPage from './MoviesPage';
 import SerialsPage from './SerialsPage';

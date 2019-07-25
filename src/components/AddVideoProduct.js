@@ -16,6 +16,12 @@ export default class AddVideoProduct extends Component {
     }).catch(e => {
       alert('Error:', e);
     });
+
+    e.target[3].value ='';
+    e.target[1].value ='';
+    e.target[4].value ='';
+    e.target[2].value ='';
+    e.target[5].value ='';
   };
 
   render() {

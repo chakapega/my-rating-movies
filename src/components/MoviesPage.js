@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import Movies from './Movies';
+import PosterFullSize from './PosterFullSize';
 
 export default class MoviesPage extends Component {
   state = {
-    movies: []
+    movies: [],
+    isOpenPosterFullSize: false,
+    posterFullSizeUrl: ''
   }
 
   componentDidMount() {
@@ -21,12 +24,23 @@ export default class MoviesPage extends Component {
       });
   };
 
+  openPosterFullSize = e => {
+    const { isOpenPosterFullSize } = this.state;
+
+    this.setState({
+      isOpenPosterFullSize: !isOpenPosterFullSize,
+      posterFullSizeUrl: e.target.src
+    });
+  };
+
   render() {
-    const { movies } = this.state;
+    const { movies, isOpenPosterFullSize, posterFullSizeUrl } = this.state;
+    const posterFullSize = isOpenPosterFullSize && <PosterFullSize openPosterFullSize={this.openPosterFullSize} posterFullSizeUrl={posterFullSizeUrl} />
 
     return (
       <div className='movies__page'>
-        <Movies movies={movies}/>
+        {posterFullSize}
+        <Movies openPosterFullSize={this.openPosterFullSize} movies={movies}/>
       </div>
     );
   };

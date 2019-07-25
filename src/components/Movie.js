@@ -1,7 +1,7 @@
 import React from 'react';
 import './Movie.css';
 
-export default function Movie({ movie }) {
+export default function Movie({ movie, openPosterFullSize }) {
   return (
     <div className='movie__container'>
       <div className='movie__description_container'>
@@ -11,7 +11,7 @@ export default function Movie({ movie }) {
         <span className='movie__rating'>{movie.rating}</span>
       </div>
       <div className='movie__poster_container'>
-        <img className='movie__poster' src={movie.posterUrl} alt='movie-poster' width='360'></img>
+        <img className='movie__poster' src={movie.posterUrl} alt='movie-poster' width='360' onClick={openPosterFullSize}></img>
       </div>
     </div>
   );

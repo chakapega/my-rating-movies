@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-around;
   border-radius: 7px;
-  box-shadow: 0 0 10px;
+  box-shadow: 0 0 20px;
 }
 .add-video-product__form_button {
   height: 30px;

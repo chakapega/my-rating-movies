@@ -17,4 +17,5 @@
 }
 .movie__poster {
   border-radius: 5px;
+  cursor: pointer;
 }

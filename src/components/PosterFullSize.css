@@ -1,0 +1,17 @@
+.poster__full-size_container {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 5vh;
+}
+.poster__full-size {
+  height: 90vh;
+  box-shadow: 0 0 50px;
+}
+.close__poster {
+  font-size: 60px;
+  margin-left: 20px;
+  cursor: pointer;
+}

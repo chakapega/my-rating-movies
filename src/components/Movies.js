@@ -2,11 +2,11 @@ import React from 'react';
 import Movie from './Movie';
 import './Movies.css';
 
-export default function Movies({ movies }) {
+export default function Movies({ movies, openPosterFullSize }) {
   return (
-    <div className='movies__list'>
+    <div className='movies__container'>
       {movies.map(movie => (
-        <Movie key={movie.id} movie={movie} />
+        <Movie openPosterFullSize={openPosterFullSize} key={movie.id} movie={movie} />
       ))}
     </div>
   );

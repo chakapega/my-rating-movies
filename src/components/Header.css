@@ -23,26 +23,29 @@
   color: white;
   text-decoration: none;
   font-size: 25px;
+  border-bottom: 1px solid transparent;
 }
 .navigation__home:hover {
   border-bottom: 1px solid white;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 .navigation__ratings {
   color: white;
   text-decoration: none;
   font-size: 25px;
+  border-bottom: 1px solid transparent;
 }
 .navigation__ratings:hover {
   border-bottom: 1px solid white;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 .navigation__add-video-product {
   color: white;
   text-decoration: none;
   font-size: 25px;
+  border-bottom: 1px solid transparent;
 }
 .navigation__add-video-product:hover {
   border-bottom: 1px solid white;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }

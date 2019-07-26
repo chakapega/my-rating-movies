@@ -11,7 +11,7 @@ export default function Serial({ serial, openPosterFullSize}) {
         <span className='serial__rating'>{serial.rating}</span>
       </div>
       <div className='serial__poster_container'>
-        <img className='serial__poster' src={serial.posterUrl} alt='serial-poster' width='360' onClick={openPosterFullSize}></img>
+        <img className='serial__poster' src={serial.posterUrl} alt='serial-poster' width='360' onClick={openPosterFullSize} title='click to open in full size'></img>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ export default function Movie({ movie, openPosterFullSize }) {
         <span className='movie__rating'>{movie.rating}</span>
       </div>
       <div className='movie__poster_container'>
-        <img className='movie__poster' src={movie.posterUrl} alt='movie-poster' width='360' onClick={openPosterFullSize}></img>
+        <img className='movie__poster' src={movie.posterUrl} alt='movie-poster' width='360' onClick={openPosterFullSize} title='click to open in full size'></img>
       </div>
     </div>
   );

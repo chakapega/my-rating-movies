@@ -1,5 +1,6 @@
 import React from 'react';
 import './Movie.css';
+import VideoProductRating from './VideoProductRating';
 
 export default function Movie({ movie, openPosterFullSize }) {
   return (
@@ -8,7 +9,7 @@ export default function Movie({ movie, openPosterFullSize }) {
         <h3 className='movie__title'>{movie.name}</h3>
         <span className='movie__year'>{movie.year}</span>
         <p className='movie__description'>{movie.description}</p>
-        <span className='movie__rating'>{movie.rating}</span>
+        <VideoProductRating rating={movie.rating}/>
       </div>
       <div className='movie__poster_container'>
         <img className='movie__poster' src={movie.posterUrl} alt='movie-poster' width='360' onClick={openPosterFullSize} title='click to open in full size'></img>

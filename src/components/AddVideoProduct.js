@@ -5,23 +5,28 @@ export default class AddVideoProduct extends Component {
   addVideoProduct = e => {
     e.preventDefault();
 
-    window.db.collection(e.target[0].value).add({
-      description: e.target[3].value,
-      name: e.target[1].value,
-      posterUrl: e.target[4].value,
-      year: e.target[2].value,
-      rating: e.target[5].value
-    }).then(() => {
-      alert('Video product successfully added');
-    }).catch(e => {
-      alert('Error:', e);
-    });
+    if(e.target[3].value !== '' && e.target[1].value !== '' && e.target[4].value !== '' &&
+      e.target[2].value !== '' && e.target[5].value !== '') {
+        window.db.collection(e.target[0].value).add({
+          description: e.target[3].value,
+          name: e.target[1].value,
+          posterUrl: e.target[4].value,
+          year: e.target[2].value,
+          rating: e.target[5].value
+        }).then(() => {
+          alert('Video product successfully added');
+        }).catch(e => {
+          alert('Error:', e);
+        });
 
-    e.target[3].value ='';
-    e.target[1].value ='';
-    e.target[4].value ='';
-    e.target[2].value ='';
-    e.target[5].value ='';
+        e.target[3].value ='';
+        e.target[1].value ='';
+        e.target[4].value ='';
+        e.target[2].value ='';
+        e.target[5].value ='';
+      } else {
+        alert('Fill in empty inputs');
+      };
   };
 
   render() {

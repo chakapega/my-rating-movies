@@ -14,6 +14,10 @@
   align-items: center;
   cursor: pointer;
 }
+.switch__body:hover {
+  box-shadow: 0 0 3px;
+  transition: all 0.5s;
+}
 .switch__ball_serials {
   height: 30px;
   width: 30px;

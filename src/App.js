@@ -12,7 +12,7 @@ export default class App extends Component {
         <Header />
         <Route path='/' exact component={HomePage} />
         <Route path='/ratings' component={RatingsPage} />
-        <Route path='/addmovie' component={AddVideoProduct} />
+        <Route path='/addvideoproduct' component={AddVideoProduct} />
       </Router>
     );
   };;

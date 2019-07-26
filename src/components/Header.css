@@ -16,6 +16,7 @@
 .header__navigation {
   width: 440px;
   display: flex;
+  height: 32px;
   justify-content: space-around;
 }
 .navigation__home {
@@ -23,8 +24,25 @@
   text-decoration: none;
   font-size: 25px;
 }
-.navigation__rating {
+.navigation__home:hover {
+  border-bottom: 1px solid white;
+  transition: all 0.2s;
+}
+.navigation__ratings {
   color: white;
   text-decoration: none;
   font-size: 25px;
+}
+.navigation__ratings:hover {
+  border-bottom: 1px solid white;
+  transition: all 0.2s;
+}
+.navigation__add-video-product {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navigation__add-video-product:hover {
+  border-bottom: 1px solid white;
+  transition: all 0.2s;
 }

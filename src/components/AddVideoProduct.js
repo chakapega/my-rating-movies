@@ -48,7 +48,7 @@ export default class AddVideoProduct extends Component {
           <label className='label__video-product_poster-url' htmlFor='input__video-product_poster-url'>Enter video product poster URL</label>
           <input type='text' id='input__video-product_poster-url'></input>
           <label className='label__video-product_rating' htmlFor='input__video-product_rating'>Enter video product rating</label>
-          <input type='number' id='input__video-product_rating'></input>
+          <input type='number' min='1' max='5' id='input__video-product_rating'></input>
           <button className='add-video-product__form_button' type='submit'>Add</button>
         </form>
       </div>

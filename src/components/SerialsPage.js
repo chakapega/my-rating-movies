@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Serials from './Serials';
 import PosterFullSize from './PosterFullSize';
+import Loader from './Loader';
+import './SerialsPage.css';
 
 export default class SerialsPage extends Component {
   state = {
@@ -40,7 +42,7 @@ export default class SerialsPage extends Component {
     return (
       <div className='serials__page'>
         {posterFullSize}
-        <Serials openPosterFullSize={this.openPosterFullSize} serials={serials} />
+        {serials.length ? <Serials openPosterFullSize={this.openPosterFullSize} serials={serials} /> : <Loader />}
       </div>
     );
   };

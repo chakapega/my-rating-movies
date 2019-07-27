@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Movies from './Movies';
 import PosterFullSize from './PosterFullSize';
+import Loader from './Loader';
+import './MoviesPage.css';
 
 export default class MoviesPage extends Component {
   state = {
@@ -40,7 +42,7 @@ export default class MoviesPage extends Component {
     return (
       <div className='movies__page'>
         {posterFullSize}
-        <Movies openPosterFullSize={this.openPosterFullSize} movies={movies}/>
+        {movies.length ? <Movies openPosterFullSize={this.openPosterFullSize} movies={movies}/> : <Loader />}
       </div>
     );
   };

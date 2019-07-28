@@ -8,14 +8,15 @@ export default class RatingsPage extends Component {
     areMoviesSelected: true,
   };
 
-  switchFunc = e => {
+  switchingBetweenMoviesAndSerials = () => {
     const { areMoviesSelected } = this.state;
+    const switchBody = document.querySelector('.switch__body');
 
-    if(e.target.className === 'switch__ball_movies') {
-      e.target.className = 'switch__ball_serials';
+    if(areMoviesSelected) {
+      switchBody.children[0].className = 'switch__ball_serials';
       this.setState({areMoviesSelected: !areMoviesSelected});
-    } else {
-      e.target.className = 'switch__ball_movies';
+    } else if(!areMoviesSelected) {
+      switchBody.children[0].className = 'switch__ball_movies';
       this.setState({areMoviesSelected: !areMoviesSelected});
     };
   };
@@ -28,7 +29,7 @@ export default class RatingsPage extends Component {
 
     return (
       <div className='ratings__page'>
-        <Switch switchFunc={this.switchFunc} />
+        <Switch switchingBetweenMoviesAndSerials={this.switchingBetweenMoviesAndSerials} />
         {moviesPage}
         {serialsPage}
       </div>

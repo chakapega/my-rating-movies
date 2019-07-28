@@ -1,0 +1,38 @@
+.home__page {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.welcome__container {
+  margin-top: 150px;
+  height: 150px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e8ffd5;
+  border-radius: 9px;
+  box-shadow: 0 0 11px;
+}
+.welcome__text {
+  font-size: 19px;
+}
+.welcome__link {
+  width: 300px;
+  height: 50px;
+  background-color: #7aada3;
+  text-decoration: none;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  margin-top: 20px;
+  font-size: 19px;
+}
+.welcome__link:hover {
+  width: 303px;
+  height: 51px;
+  transition: 0.1s;
+}
